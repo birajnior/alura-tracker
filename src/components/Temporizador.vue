@@ -1,5 +1,5 @@
 <template>
-  <div class="is-flex is-aling-items-center is-justify-content-space-between">
+  <div class="is-flex is-align-items-center is-justify-content-space-between">
     <Cronometro :tempoEmSegundos="tempoEmSegundos" />
 
     <Botao
