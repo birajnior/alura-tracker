@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
-
 <template>
   <button class="button" @click="clicado" :disabled="desabilitado">
     <span class="icon">
@@ -13,7 +11,8 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  nome: "Botao",
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Botao",
   emits: ["clicado"],
   props: {
     desabilitado: {
@@ -21,7 +20,7 @@ export default defineComponent({
     },
     icone: {
       type: String,
-      requered: true,
+      required: true,
     },
     texto: {
       type: String,
